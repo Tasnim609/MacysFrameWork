@@ -103,7 +103,7 @@
                     <div class="method-list-content skipped suite-Default_suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="pages.HomePageTest" class="method navigator-link" hash-for-method="menTest">menTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="pages.HomePageTest" class="method navigator-link" hash-for-method="logoTest">logoTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -126,30 +126,31 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="menTest">
-                  </a> <!-- menTest -->
-                  <span class="method-name">menTest</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: You must enable &apos;Allow remote automation&apos; in Safari Developer preferences to control Safari via WebDriver. 
-Host info: host: &apos;Muhammads-MacBook-Air.local&apos;, ip: &apos;2601:40:c500:7330:0:0:0:6cf1%en0&apos;
+                  <a name="logoTest">
+                  </a> <!-- logoTest -->
+                  <span class="method-name">logoTest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=127.0.6533.120)
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7&apos;, java.version: &apos;11.0.23&apos;
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07de726c934922618bd20c1f49b5e747, get {url=https://www.macys.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /var/folders/2q/c_mlfcxd4_s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54438/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07de726c934922618bd20c1f49b5e747
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
-	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
-	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
-	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
-	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
-	at base_unit.BaseClass.setUp(BaseClass.java:24)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at base_unit.BaseClass.setUp(BaseClass.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -191,7 +192,7 @@ Capabilities {browserName: safari}
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/2q/c_mlfcxd4_s059ct1v1tcf3r0000gn/T/testng-eclipse-1061706100/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/2q/c_mlfcxd4_s059ct1v1tcf3r0000gn/T/testng-eclipse-980754667/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -202,7 +203,7 @@ Capabilities {browserName: safari}
     &lt;classes&gt;
       &lt;class name=&quot;pages.HomePageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;menTest&quot;/&gt;
+          &lt;include name=&quot;logoTest&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- pages.HomePageTest --&gt;
     &lt;/classes&gt;
@@ -246,14 +247,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'menTest')
+data.setCell(0, 1, 'logoTest')
 data.setCell(0, 2, 'pages.HomePageTest')
-data.setCell(0, 3, 32);
+data.setCell(0, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 ms</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -274,7 +275,7 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">pages.HomePageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">logoTest</span>
+                <span class="ignored-method-name">menTest</span>
                 <br/>
                 <span class="ignored-method-name">demo</span>
                 <br/>

@@ -13,7 +13,7 @@ public HomePage(WebDriver driver) {//Parameterize Constructor,
 	this.driver = driver;
 	PageFactory.initElements(driver, this);
 	
-}
+}  
 @FindBy(xpath = "//a[@class='logo']")
 WebElement logo;
 

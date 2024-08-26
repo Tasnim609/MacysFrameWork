@@ -1,6 +1,7 @@
 package pages;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import base_unit.BaseClass;
 

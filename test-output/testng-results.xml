@@ -2,44 +2,47 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-29T21:19:28 EDT" name="Default suite" finished-at="2024-07-29T21:19:41 EDT" duration-ms="12671">
+  <suite started-at="2024-08-14T21:11:09 EDT" name="Default suite" finished-at="2024-08-14T21:11:37 EDT" duration-ms="28630">
     <groups>
     </groups>
-    <test started-at="2024-07-29T21:19:28 EDT" name="Default test" finished-at="2024-07-29T21:19:41 EDT" duration-ms="12671">
+    <test started-at="2024-08-14T21:11:09 EDT" name="Default test" finished-at="2024-08-14T21:11:37 EDT" duration-ms="28630">
       <class name="pages.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pages.HomePageTest@272113c4]" started-at="2024-07-29T21:19:28 EDT" name="setUp" finished-at="2024-07-29T21:19:41 EDT" duration-ms="12446" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pages.HomePageTest@272113c4]" started-at="2024-08-14T21:11:09 EDT" name="setUp" finished-at="2024-08-14T21:11:37 EDT" duration-ms="28364" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in Safari Developer preferences to control Safari via WebDriver. 
-Host info: host: 'Muhammads-MacBook-Air.local', ip: '2601:40:c500:7330:0:0:0:6cf1%en0'
+              <![CDATA[unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=127.0.6533.120)
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7', java.version: '11.0.23'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07de726c934922618bd20c1f49b5e747, get {url=https://www.macys.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /var/folders/2q/c_mlfcxd4_s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54438/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07de726c934922618bd20c1f49b5e747]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in Safari Developer preferences to control Safari via WebDriver. 
-Host info: host: 'Muhammads-MacBook-Air.local', ip: '2601:40:c500:7330:0:0:0:6cf1%en0'
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=127.0.6533.120)
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7', java.version: '11.0.23'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07de726c934922618bd20c1f49b5e747, get {url=https://www.macys.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /var/folders/2q/c_mlfcxd4_s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54438/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07de726c934922618bd20c1f49b5e747
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
-at base_unit.BaseClass.setUp(BaseClass.java:24)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at base_unit.BaseClass.setUp(BaseClass.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,43 +77,46 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="menTest()[pri:0, instance:pages.HomePageTest@272113c4]" started-at="2024-07-29T21:19:41 EDT" name="menTest" finished-at="2024-07-29T21:19:41 EDT" duration-ms="32" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="logoTest()[pri:0, instance:pages.HomePageTest@272113c4]" started-at="2024-08-14T21:11:37 EDT" name="logoTest" finished-at="2024-08-14T21:11:37 EDT" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in Safari Developer preferences to control Safari via WebDriver. 
-Host info: host: 'Muhammads-MacBook-Air.local', ip: '2601:40:c500:7330:0:0:0:6cf1%en0'
+              <![CDATA[unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=127.0.6533.120)
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7', java.version: '11.0.23'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07de726c934922618bd20c1f49b5e747, get {url=https://www.macys.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /var/folders/2q/c_mlfcxd4_s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54438/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07de726c934922618bd20c1f49b5e747]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in Safari Developer preferences to control Safari via WebDriver. 
-Host info: host: 'Muhammads-MacBook-Air.local', ip: '2601:40:c500:7330:0:0:0:6cf1%en0'
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=127.0.6533.120)
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7', java.version: '11.0.23'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07de726c934922618bd20c1f49b5e747, get {url=https://www.macys.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /var/folders/2q/c_mlfcxd4_s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54438/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07de726c934922618bd20c1f49b5e747
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
-at base_unit.BaseClass.setUp(BaseClass.java:24)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at base_unit.BaseClass.setUp(BaseClass.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,11 +151,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- menTest -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:pages.HomePageTest@272113c4]" started-at="2024-07-29T21:19:41 EDT" name="tearUp" finished-at="2024-07-29T21:19:41 EDT" duration-ms="0" status="SKIP">
+        </test-method> <!-- logoTest -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:pages.HomePageTest@272113c4]" started-at="2024-08-14T21:11:37 EDT" name="tearUp" finished-at="2024-08-14T21:11:37 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->

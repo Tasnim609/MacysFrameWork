@@ -18,10 +18,10 @@ public HomePage homePage;
 @BeforeMethod
 public void setUp() {
 	//WebDriverManager.chromedriver().setup();
-	WebDriverManager.safaridriver().setup();
-	//System.setProperty("webdriver.chrome.driver", "/Users/muhammadquarashy/eclipse-workspace/com.costco/driver/chromedriver");
-	//driver=new ChromeDriver();
-	driver = new SafariDriver();
+	//WebDriverManager.safaridriver().setup();
+	//driver = new SafariDriver();
+	System.setProperty("webdriver.chrome.driver", "/Users/muhammadquarashy/eclipse-workspace/com.costco/driver/chromedriver");
+	driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().deleteAllCookies();
 	driver.get("https://www.macys.com/");

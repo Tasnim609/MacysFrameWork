@@ -6,7 +6,7 @@
       <class name="pages.HomePageTest">
         <methods>
           <include name="setUp"/>
-          <include name="menTest"/>
+          <include name="logoTest"/>
           <include name="tearUp"/>
         </methods>
       </class> <!-- pages.HomePageTest -->
